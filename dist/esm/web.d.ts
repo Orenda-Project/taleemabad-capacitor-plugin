@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
-import type { DownloadManagerPlugin } from './definitions';
-export declare class DownloadManagerWeb extends WebPlugin implements DownloadManagerPlugin {
+import type { TaleemabadCacpacitorPlugin } from './definitions';
+export declare class TaleemabadCacpacitorPluginWeb extends WebPlugin implements TaleemabadCacpacitorPlugin {
     startScan(): Promise<{
         images?: string[];
         pdf?: string | null;

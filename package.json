@@ -1,6 +1,6 @@
 {
   "name": "taleemabad-capacitor-plugin",
-  "version": "1.1.8",
+  "version": "1.0.1",
   "description": "Capacitor plugin for downloading files to native device and document scanning",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Orenda-Project/capacitor-download-manager.git.git"
+    "url": "https://github.com/Orenda-Project/taleemabad-capacitor-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/Orenda-Project/capacitor-download-manager.git/issues"
+    "url": "https://github.com/Orenda-Project/taleemabad-capacitor-plugin.git/issues"
   },
   "keywords": [
     "capacitor",
@@ -37,7 +37,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api DownloadManagerPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api TaleemabadCacpacitorPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
