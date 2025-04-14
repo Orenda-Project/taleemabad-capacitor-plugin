@@ -1,18 +1,11 @@
 var capacitorDownloadManager = (function (exports, core) {
     'use strict';
 
-    exports.OutputFormats = void 0;
-    (function (OutputFormats) {
-        OutputFormats["JPEG"] = "JPEG";
-        OutputFormats["PDF"] = "PDF";
-        OutputFormats["BOTH"] = "BOTH";
-    })(exports.OutputFormats || (exports.OutputFormats = {}));
-
-    const DownloadManager = core.registerPlugin('DownloadManager', {
-        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.DownloadManagerWeb()),
+    const TaleemabadPlugin = core.registerPlugin('TaleemabadPlugin', {
+        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.TaleemabadCacpacitorPluginWeb()),
     });
 
-    class DownloadManagerWeb extends core.WebPlugin {
+    class TaleemabadCacpacitorPluginWeb extends core.WebPlugin {
         startScan() {
             console.error('Document scanning is not supported on the web platform.');
             return Promise.resolve({ images: undefined, pdf: null });
@@ -45,10 +38,10 @@ var capacitorDownloadManager = (function (exports, core) {
 
     var web = /*#__PURE__*/Object.freeze({
         __proto__: null,
-        DownloadManagerWeb: DownloadManagerWeb
+        TaleemabadCacpacitorPluginWeb: TaleemabadCacpacitorPluginWeb
     });
 
-    exports.DownloadManager = DownloadManager;
+    exports.TaleemabadPlugin = TaleemabadPlugin;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

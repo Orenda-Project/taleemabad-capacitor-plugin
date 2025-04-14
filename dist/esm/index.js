@@ -1,7 +1,7 @@
 import { registerPlugin } from '@capacitor/core';
-const DownloadManager = registerPlugin('DownloadManager', {
-    web: () => import('./web').then(m => new m.DownloadManagerWeb()),
+const TaleemabadPlugin = registerPlugin('TaleemabadPlugin', {
+    web: () => import('./web').then(m => new m.TaleemabadCacpacitorPluginWeb()),
 });
 export * from './definitions';
-export { DownloadManager };
+export { TaleemabadPlugin };
 //# sourceMappingURL=index.js.map

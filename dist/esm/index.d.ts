@@ -1,4 +1,4 @@
-import type { DownloadManagerPlugin } from './definitions';
-declare const DownloadManager: DownloadManagerPlugin;
+import type { TaleemabadCacpacitorPlugin } from './definitions';
+declare const TaleemabadPlugin: TaleemabadCacpacitorPlugin;
 export * from './definitions';
-export { DownloadManager };
+export { TaleemabadPlugin };
