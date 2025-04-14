@@ -1,6 +1,5 @@
-# capactior-download-manager
-
-Capacitor plugin for downloading files to native device
+# Taleemabad Capacitor Plugin
+Capacitor plugin for downloading files to native device and document scanning
 
 ## Install
 
