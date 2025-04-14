@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { DownloadManagerPlugin } from './definitions';
+import type { TaleemabadCacpacitorPlugin } from './definitions';
 
-export class DownloadManagerWeb
+export class TaleemabadCacpacitorPluginWeb
   extends WebPlugin
-  implements DownloadManagerPlugin
+  implements TaleemabadCacpacitorPlugin
 {
   startScan(): Promise<{ images?: string[]; pdf?: string | null }> {
     console.error('Document scanning is not supported on the web platform.');

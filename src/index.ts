@@ -1,13 +1,13 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { DownloadManagerPlugin } from './definitions';
+import type { TaleemabadCacpacitorPlugin } from './definitions';
 
-const DownloadManager = registerPlugin<DownloadManagerPlugin>(
-  'DownloadManager',
+const TaleemabadCacpacitorPlugin = registerPlugin<TaleemabadCacpacitorPlugin>(
+  'TaleemabadCacpacitorPlugin',
   {
-    web: () => import('./web').then(m => new m.DownloadManagerWeb()),
+    web: () => import('./web').then(m => new m.TaleemabadCacpacitorPluginWeb()),
   },
 );
 
 export * from './definitions';
-export { DownloadManager };
+export { TaleemabadCacpacitorPlugin };

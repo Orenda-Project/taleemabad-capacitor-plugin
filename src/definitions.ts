@@ -1,21 +1,6 @@
 import type { PluginListenerHandle } from '@capacitor/core';
-
-export enum OutputFormats {
-  JPEG = 'JPEG',
-  PDF = 'PDF',
-  BOTH = 'BOTH',
-}
-
-export type ScanResult = {
-  images?: string[];
-  pdf?: string | null;
-};
-
-type URLRequest = {
-  tag: string;
-  url: string;
-};
-export interface DownloadManagerPlugin {
+import type { OutputFormats, ScanResult, URLRequest } from './types';
+export interface TaleemabadCacpacitorPlugin {
   startScan(
     options?: Partial<{
       pageLimit: number;
