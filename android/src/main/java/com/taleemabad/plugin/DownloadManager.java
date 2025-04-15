@@ -34,16 +34,14 @@ public class DownloadManager {
     private static Context mContext;
     private static Fetch fetch;
     private static DownloadManager instance;
-    private static FetchListener mFetchListener;
 
     public static DownloadManager getInstance(@NonNull Context context, FetchListener fetchListener) {
         // If the instance is null, create a new instance
         if (instance == null) {
-            instance = new DownloadManager(context);
             mContext = context;
+            instance = new DownloadManager(context);
             fetch = instance.init();
-            mFetchListener = fetchListener;
-           fetch.addListener(mFetchListener,true,true);
+            fetch.addListener(fetchListener);
         }
         // Return the single instance
         return instance;
