@@ -1,4 +1,4 @@
-package com.taleemabad.downloadmanager;
+package com.taleemabad.plugin;
 
 import android.os.Build;
 import android.util.Log;
@@ -29,11 +29,10 @@ import com.tonyodev.fetch2core.DownloadBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-@CapacitorPlugin(name = "DownloadManager")
-public class DownloadManagerPlugin extends Plugin implements FetchListener {
+@CapacitorPlugin(name = "TaleemabadCapacitorPlugin")
+public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
 
     private ActivityResultLauncher<IntentSenderRequest> scannerLauncher;
-
     private DownloadManager downloadManager = null;
     private static final String TAG = "DownloadManager";
     private DocumentScanner documentScanner = null;

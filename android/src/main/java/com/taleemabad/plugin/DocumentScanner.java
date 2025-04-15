@@ -1,4 +1,4 @@
-package com.taleemabad.downloadmanager;
+package com.taleemabad.plugin;
 
 import android.app.Activity;
 import android.util.Log;
@@ -6,7 +6,6 @@ import android.util.Log;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.IntentSenderRequest;
-import androidx.annotation.NonNull;
 
 import com.getcapacitor.JSArray;
 import com.getcapacitor.JSObject;

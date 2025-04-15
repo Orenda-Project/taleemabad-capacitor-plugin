@@ -1,4 +1,4 @@
-package com.taleemabad.downloadmanager;
+package com.taleemabad.plugin;
 
 import android.content.Context;
 import android.net.Uri;

@@ -1,4 +1,4 @@
-package com.taleemabad.downloadmanager;
+package com.taleemabad.plugin;
 
 public class DownloadEvent {
 

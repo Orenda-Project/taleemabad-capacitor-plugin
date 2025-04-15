@@ -1,4 +1,4 @@
-package com.taleemabad.downloadmanager;
+package com.taleemabad.plugin;
 
 import android.content.Context;
 import android.util.Log;
@@ -34,6 +34,7 @@ public class DownloadManager {
     private static Context mContext;
     private static Fetch fetch;
     private static DownloadManager instance;
+    private static FetchListener mFetchListener;
 
     public static DownloadManager getInstance(@NonNull Context context, FetchListener fetchListener) {
         // If the instance is null, create a new instance
@@ -41,7 +42,8 @@ public class DownloadManager {
             instance = new DownloadManager(context);
             mContext = context;
             fetch = instance.init();
-            fetch.addListener(fetchListener);
+            mFetchListener = fetchListener;
+           fetch.addListener(mFetchListener,true,true);
         }
         // Return the single instance
         return instance;
