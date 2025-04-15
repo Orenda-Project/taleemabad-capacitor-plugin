@@ -32,7 +32,6 @@ import java.util.List;
 @CapacitorPlugin(name = "TaleemabadCapacitorPlugin")
 public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
 
-    private ActivityResultLauncher<IntentSenderRequest> scannerLauncher;
     private DownloadManager downloadManager = null;
     private static final String TAG = "DownloadManager";
     private DocumentScanner documentScanner = null;
@@ -40,7 +39,7 @@ public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
     @Override
     public void load() {
         BridgeActivity activity = (BridgeActivity) this.getActivity();
-        scannerLauncher = activity.registerForActivityResult(new ActivityResultContracts.StartIntentSenderForResult(), this::handleScanResult);
+        ActivityResultLauncher<IntentSenderRequest> scannerLauncher = activity.registerForActivityResult(new ActivityResultContracts.StartIntentSenderForResult(), this::handleScanResult);
         documentScanner = new DocumentScanner(activity, scannerLauncher);
     }
 
@@ -208,6 +207,8 @@ public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
 
     @Override
     public void onDownloadBlockUpdated(@NonNull Download download, @NonNull DownloadBlock downloadBlock, int i) {
+        Log.i(TAG, DownloadEvent.ON_DOWNLOAD_BLOCK_UPDATED + " : " + download);
+        notifyListeners(DownloadEvent.ON_DOWNLOAD_BLOCK_UPDATED, new JSObject().put("download", new Gson().toJson(download)));
     }
 
     @Override
@@ -230,6 +231,8 @@ public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
 
     @Override
     public void onQueued(@NonNull Download download, boolean b) {
+        Log.i(TAG, DownloadEvent.ON_QUEUED + " : " + download);
+        notifyListeners(DownloadEvent.ON_QUEUED, new JSObject().put("download", new Gson().toJson(download)));
     }
 
     @Override
@@ -246,10 +249,14 @@ public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
 
     @Override
     public void onStarted(@NonNull Download download, @NonNull List<? extends DownloadBlock> list, int i) {
+        Log.i(TAG, DownloadEvent.ON_STARTED + " : " + download);
+        notifyListeners(DownloadEvent.ON_STARTED, new JSObject().put("download", new Gson().toJson(download)));
     }
 
     @Override
     public void onWaitingNetwork(@NonNull Download download) {
+        Log.i(TAG, DownloadEvent.ON_WAITING_NETWORK + " : " + download);
+        notifyListeners(DownloadEvent.ON_WAITING_NETWORK, new JSObject().put("download", new Gson().toJson(download)));
     }
 
 

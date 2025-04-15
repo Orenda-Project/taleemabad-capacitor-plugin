@@ -1,5 +1,6 @@
 package com.taleemabad.plugin;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 
@@ -31,8 +32,10 @@ public class DownloadManager {
     private static final String TAG = "DownloadManager";
     private static final String namespace = "DownloadManager";
     private final int groupId = namespace.hashCode();
-    private static Context mContext;
     private static Fetch fetch;
+    @SuppressLint("StaticFieldLeak")
+    private static Context mContext;
+    @SuppressLint("StaticFieldLeak")
     private static DownloadManager instance;
 
     public static DownloadManager getInstance(@NonNull Context context, FetchListener fetchListener) {
@@ -49,18 +52,6 @@ public class DownloadManager {
 
     public DownloadManager(@NonNull Context context) {
         mContext = context;
-    }
-
-    public Fetch getFetch() {
-        return fetch;
-    }
-
-    public String getNamespace() {
-        return namespace;
-    }
-
-    public int getGroupID() {
-        return groupId;
     }
 
     private Fetch init() {
@@ -83,16 +74,12 @@ public class DownloadManager {
     }
 
     private void startDownloading(List<String> urls) {
-        fetch.enqueue(getFetchRequests(urls), updatedRequests -> {
-            Log.i(TAG, "enqueue: " + updatedRequests);
-        });
+        fetch.enqueue(getFetchRequests(urls), updatedRequests -> Log.i(TAG, "enqueue: " + updatedRequests));
     }
 
     private void startDownloadingWithTag(List<JSONObject> urls) {
         List<Request> requests = getFetchRequestsWithTag(urls);
-        fetch.enqueue(requests, updatedRequests -> {
-            Log.i(TAG, "enqueue: " + updatedRequests);
-        });
+        fetch.enqueue(requests, updatedRequests -> Log.i(TAG, "enqueue: " + updatedRequests));
     }
 
     private List<Request> getFetchRequests(List<String> urls) {

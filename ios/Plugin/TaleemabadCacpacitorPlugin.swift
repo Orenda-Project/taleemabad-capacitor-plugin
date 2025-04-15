@@ -5,8 +5,8 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(DownloadManagerPlugin)
-public class DownloadManagerPlugin: CAPPlugin , DownloadDelegate {
+@objc(TaleemabadCacpacitorPlugin)
+public class TaleemabadCacpacitorPlugin: CAPPlugin , DownloadDelegate {
     
     let encoder = JSONEncoder()
     
