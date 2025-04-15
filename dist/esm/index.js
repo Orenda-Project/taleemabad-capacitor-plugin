@@ -1,7 +1,7 @@
 import { registerPlugin } from '@capacitor/core';
-const TaleemabadPlugin = registerPlugin('TaleemabadPlugin', {
+const plugin = registerPlugin('TaleemabadCacpacitorPlugin', {
     web: () => import('./web').then(m => new m.TaleemabadCacpacitorPluginWeb()),
 });
 export * from './definitions';
-export { TaleemabadPlugin };
+export { plugin };
 //# sourceMappingURL=index.js.map

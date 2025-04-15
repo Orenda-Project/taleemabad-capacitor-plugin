@@ -13,19 +13,19 @@ npx cap sync
 
 <docgen-index>
 
-- [`startScan(...)`](#startscan)
-- [`startDownload(...)`](#startdownload)
-- [`startDownloadWithTag(...)`](#startdownloadwithtag)
-- [`removeDownloads(...)`](#removedownloads)
-- [`pauseDownloads(...)`](#pausedownloads)
-- [`cancelDownloads(...)`](#canceldownloads)
-- [`resumeDownloads()`](#resumedownloads)
-- [`getDownloadList()`](#getdownloadlist)
-- [`getDownloadListById()`](#getdownloadlistbyid)
-- [`addListener(string, ...)`](#addlistenerstring)
-- [Interfaces](#interfaces)
-- [Type Aliases](#type-aliases)
-- [Enums](#enums)
+* [`startScan(...)`](#startscan)
+* [`startDownload(...)`](#startdownload)
+* [`startDownloadWithTag(...)`](#startdownloadwithtag)
+* [`removeDownloads(...)`](#removedownloads)
+* [`pauseDownloads(...)`](#pausedownloads)
+* [`cancelDownloads(...)`](#canceldownloads)
+* [`resumeDownloads()`](#resumedownloads)
+* [`getDownloadList()`](#getdownloadlist)
+* [`getDownloadListById()`](#getdownloadlistbyid)
+* [`addListener(string, ...)`](#addlistenerstring)
+* [Interfaces](#interfaces)
+* [Type Aliases](#type-aliases)
+* [Enums](#enums)
 
 </docgen-index>
 

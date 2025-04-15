@@ -1,7 +1,7 @@
 var capacitorDownloadManager = (function (exports, core) {
     'use strict';
 
-    const TaleemabadPlugin = core.registerPlugin('TaleemabadPlugin', {
+    const plugin = core.registerPlugin('TaleemabadCacpacitorPlugin', {
         web: () => Promise.resolve().then(function () { return web; }).then(m => new m.TaleemabadCacpacitorPluginWeb()),
     });
 
@@ -41,7 +41,7 @@ var capacitorDownloadManager = (function (exports, core) {
         TaleemabadCacpacitorPluginWeb: TaleemabadCacpacitorPluginWeb
     });
 
-    exports.TaleemabadPlugin = TaleemabadPlugin;
+    exports.plugin = plugin;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

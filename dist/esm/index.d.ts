@@ -1,4 +1,4 @@
 import type { TaleemabadCacpacitorPlugin } from './definitions';
-declare const TaleemabadPlugin: TaleemabadCacpacitorPlugin;
+declare const plugin: TaleemabadCacpacitorPlugin;
 export * from './definitions';
-export { TaleemabadPlugin };
+export { plugin };

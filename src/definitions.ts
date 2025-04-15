@@ -1,5 +1,7 @@
 import type { PluginListenerHandle } from '@capacitor/core';
+
 import type { OutputFormats, ScanResult, URLRequest } from './types';
+
 export interface TaleemabadCacpacitorPlugin {
   startScan(
     options?: Partial<{

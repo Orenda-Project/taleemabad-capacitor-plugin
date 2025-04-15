@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3CBC76BA246A2A9FE12DFA /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9952B0377945A593FC6C240 /* Pods_Plugin.framework */; };
 		189412172BCEA5EC00799CDD /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189412162BCEA5EC00799CDD /* Download.swift */; };
 		2F98D68224C9AAE500613A4C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98D68124C9AAE400613A4C /* DownloadManager.swift */; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
 		50ADFF97201F53D600D50D53 /* DownloadManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFF96201F53D600D50D53 /* DownloadManagerTests.swift */; };
-		50ADFF99201F53D600D50D53 /* DownloadManagerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ADFF8B201F53D600D50D53 /* DownloadManagerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50ADFF99201F53D600D50D53 /* TaleemabadCacpacitorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ADFF8B201F53D600D50D53 /* TaleemabadCacpacitorPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFFA52020D75100D50D53 /* Capacitor.framework */; };
-		50ADFFA82020EE4F00D50D53 /* DownloadManagerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFFA72020EE4F00D50D53 /* DownloadManagerPlugin.m */; };
-		50E1A94820377CB70090CE1A /* DownloadManagerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1A94720377CB70090CE1A /* DownloadManagerPlugin.swift */; };
-		9FD536A3CECD1D0B8D15D4BC /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FC9429FA7C7E5EE5AD85B4 /* Pods_PluginTests.framework */; };
+		50ADFFA82020EE4F00D50D53 /* TaleemabadCacpacitorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFFA72020EE4F00D50D53 /* TaleemabadCacpacitorPlugin.m */; };
+		50E1A94820377CB70090CE1A /* TaleemabadCacpacitorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1A94720377CB70090CE1A /* TaleemabadCacpacitorPlugin.swift */; };
+		698E1ABFAA1173216C9E05AA /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEB0B1670098F0AE364A2CC /* Pods_Plugin.framework */; };
+		6E3635CF37D530A95894B11A /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6674692CCF3BEAA6B77DB0 /* Pods_PluginTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,23 +30,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04FC9429FA7C7E5EE5AD85B4 /* Pods_PluginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07AC5F0E1A6B7A4C60D81DDB /* Pods-PluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.debug.xcconfig"; path = "Target Support Files/Pods-PluginTests/Pods-PluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08B7914F99255A832DF61689 /* Pods-Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.release.xcconfig"; path = "Target Support Files/Pods-Plugin/Pods-Plugin.release.xcconfig"; sourceTree = "<group>"; };
+		106B1D9A510141B444043B63 /* Pods-PluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.debug.xcconfig"; path = "Target Support Files/Pods-PluginTests/Pods-PluginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		189412162BCEA5EC00799CDD /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
-		2B80AAA9945AF9ED1941421E /* Pods-PluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.release.xcconfig"; path = "Target Support Files/Pods-PluginTests/Pods-PluginTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F98D68124C9AAE400613A4C /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		3EEB0B1670098F0AE364A2CC /* Pods_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADFF88201F53D600D50D53 /* Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50ADFF8B201F53D600D50D53 /* DownloadManagerPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManagerPlugin.h; sourceTree = "<group>"; };
+		50ADFF8B201F53D600D50D53 /* TaleemabadCacpacitorPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaleemabadCacpacitorPlugin.h; sourceTree = "<group>"; };
 		50ADFF8C201F53D600D50D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ADFF91201F53D600D50D53 /* PluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADFF96201F53D600D50D53 /* DownloadManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagerTests.swift; sourceTree = "<group>"; };
 		50ADFF98201F53D600D50D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ADFFA52020D75100D50D53 /* Capacitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Capacitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50ADFFA72020EE4F00D50D53 /* DownloadManagerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManagerPlugin.m; sourceTree = "<group>"; };
-		50E1A94720377CB70090CE1A /* DownloadManagerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManagerPlugin.swift; sourceTree = "<group>"; };
-		731C9ADF8A2FF3F2955C2910 /* Pods-Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.release.xcconfig"; path = "Target Support Files/Pods-Plugin/Pods-Plugin.release.xcconfig"; sourceTree = "<group>"; };
-		8E49CD18E56DBAE834F62CFB /* Pods-Plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.debug.xcconfig"; path = "Target Support Files/Pods-Plugin/Pods-Plugin.debug.xcconfig"; sourceTree = "<group>"; };
-		F9952B0377945A593FC6C240 /* Pods_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50ADFFA72020EE4F00D50D53 /* TaleemabadCacpacitorPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaleemabadCacpacitorPlugin.m; sourceTree = "<group>"; };
+		50E1A94720377CB70090CE1A /* TaleemabadCacpacitorPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaleemabadCacpacitorPlugin.swift; sourceTree = "<group>"; };
+		62828F72440D41377824E6A8 /* Pods-PluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginTests.release.xcconfig"; path = "Target Support Files/Pods-PluginTests/Pods-PluginTests.release.xcconfig"; sourceTree = "<group>"; };
+		71A0467EAF34485677C3E926 /* Pods-Plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin.debug.xcconfig"; path = "Target Support Files/Pods-Plugin/Pods-Plugin.debug.xcconfig"; sourceTree = "<group>"; };
+		9E6674692CCF3BEAA6B77DB0 /* Pods_PluginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */,
-				0A3CBC76BA246A2A9FE12DFA /* Pods_Plugin.framework in Frameworks */,
+				698E1ABFAA1173216C9E05AA /* Pods_Plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */,
-				9FD536A3CECD1D0B8D15D4BC /* Pods_PluginTests.framework in Frameworks */,
+				6E3635CF37D530A95894B11A /* Pods_PluginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				189412162BCEA5EC00799CDD /* Download.swift */,
-				50E1A94720377CB70090CE1A /* DownloadManagerPlugin.swift */,
 				2F98D68124C9AAE400613A4C /* DownloadManager.swift */,
-				50ADFF8B201F53D600D50D53 /* DownloadManagerPlugin.h */,
-				50ADFFA72020EE4F00D50D53 /* DownloadManagerPlugin.m */,
+				50E1A94720377CB70090CE1A /* TaleemabadCacpacitorPlugin.swift */,
+				50ADFF8B201F53D600D50D53 /* TaleemabadCacpacitorPlugin.h */,
+				50ADFFA72020EE4F00D50D53 /* TaleemabadCacpacitorPlugin.m */,
 				50ADFF8C201F53D600D50D53 /* Info.plist */,
 			);
 			path = Plugin;
@@ -116,10 +116,10 @@
 		A32B5BA8DC75D304D2C3BBDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8E49CD18E56DBAE834F62CFB /* Pods-Plugin.debug.xcconfig */,
-				731C9ADF8A2FF3F2955C2910 /* Pods-Plugin.release.xcconfig */,
-				07AC5F0E1A6B7A4C60D81DDB /* Pods-PluginTests.debug.xcconfig */,
-				2B80AAA9945AF9ED1941421E /* Pods-PluginTests.release.xcconfig */,
+				71A0467EAF34485677C3E926 /* Pods-Plugin.debug.xcconfig */,
+				08B7914F99255A832DF61689 /* Pods-Plugin.release.xcconfig */,
+				106B1D9A510141B444043B63 /* Pods-PluginTests.debug.xcconfig */,
+				62828F72440D41377824E6A8 /* Pods-PluginTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				50ADFFA52020D75100D50D53 /* Capacitor.framework */,
-				F9952B0377945A593FC6C240 /* Pods_Plugin.framework */,
-				04FC9429FA7C7E5EE5AD85B4 /* Pods_PluginTests.framework */,
+				3EEB0B1670098F0AE364A2CC /* Pods_Plugin.framework */,
+				9E6674692CCF3BEAA6B77DB0 /* Pods_PluginTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ADFF99201F53D600D50D53 /* DownloadManagerPlugin.h in Headers */,
+				50ADFF99201F53D600D50D53 /* TaleemabadCacpacitorPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50ADFF9C201F53D600D50D53 /* Build configuration list for PBXNativeTarget "Plugin" */;
 			buildPhases = (
-				52F245F77A1BDE2ED9F54F59 /* [CP] Check Pods Manifest.lock */,
+				14AFCEE06298003591C3DC54 /* [CP] Check Pods Manifest.lock */,
 				50ADFF83201F53D600D50D53 /* Sources */,
 				50ADFF84201F53D600D50D53 /* Frameworks */,
 				50ADFF85201F53D600D50D53 /* Headers */,
@@ -171,11 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50ADFF9F201F53D600D50D53 /* Build configuration list for PBXNativeTarget "PluginTests" */;
 			buildPhases = (
-				F0F0688AF255055C6A0C52F5 /* [CP] Check Pods Manifest.lock */,
+				E73474BAE65A56FC296B856A /* [CP] Check Pods Manifest.lock */,
 				50ADFF8D201F53D600D50D53 /* Sources */,
 				50ADFF8E201F53D600D50D53 /* Frameworks */,
 				50ADFF8F201F53D600D50D53 /* Resources */,
-				81966571B6B981B55E6A865F /* [CP] Embed Pods Frameworks */,
+				B262DCF1B5FD5C03E25B0003 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +246,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52F245F77A1BDE2ED9F54F59 /* [CP] Check Pods Manifest.lock */ = {
+		14AFCEE06298003591C3DC54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,7 +268,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81966571B6B981B55E6A865F /* [CP] Embed Pods Frameworks */ = {
+		B262DCF1B5FD5C03E25B0003 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,7 +288,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PluginTests/Pods-PluginTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F0F0688AF255055C6A0C52F5 /* [CP] Check Pods Manifest.lock */ = {
+		E73474BAE65A56FC296B856A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,10 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E1A94820377CB70090CE1A /* DownloadManagerPlugin.swift in Sources */,
+				50E1A94820377CB70090CE1A /* TaleemabadCacpacitorPlugin.swift in Sources */,
 				189412172BCEA5EC00799CDD /* Download.swift in Sources */,
 				2F98D68224C9AAE500613A4C /* DownloadManager.swift in Sources */,
-				50ADFFA82020EE4F00D50D53 /* DownloadManagerPlugin.m in Sources */,
+				50ADFFA82020EE4F00D50D53 /* TaleemabadCacpacitorPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +470,7 @@
 		};
 		50ADFF9D201F53D600D50D53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E49CD18E56DBAE834F62CFB /* Pods-Plugin.debug.xcconfig */;
+			baseConfigurationReference = 71A0467EAF34485677C3E926 /* Pods-Plugin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -496,7 +496,7 @@
 		};
 		50ADFF9E201F53D600D50D53 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 731C9ADF8A2FF3F2955C2910 /* Pods-Plugin.release.xcconfig */;
+			baseConfigurationReference = 08B7914F99255A832DF61689 /* Pods-Plugin.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -521,7 +521,7 @@
 		};
 		50ADFFA0201F53D600D50D53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07AC5F0E1A6B7A4C60D81DDB /* Pods-PluginTests.debug.xcconfig */;
+			baseConfigurationReference = 106B1D9A510141B444043B63 /* Pods-PluginTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PluginTests/Info.plist;
@@ -535,7 +535,7 @@
 		};
 		50ADFFA1201F53D600D50D53 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B80AAA9945AF9ED1941421E /* Pods-PluginTests.release.xcconfig */;
+			baseConfigurationReference = 62828F72440D41377824E6A8 /* Pods-PluginTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PluginTests/Info.plist;

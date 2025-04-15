@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var core = require('@capacitor/core');
 
-const TaleemabadPlugin = core.registerPlugin('TaleemabadPlugin', {
+const plugin = core.registerPlugin('TaleemabadCacpacitorPlugin', {
     web: () => Promise.resolve().then(function () { return web; }).then(m => new m.TaleemabadCacpacitorPluginWeb()),
 });
 
@@ -44,5 +44,5 @@ var web = /*#__PURE__*/Object.freeze({
     TaleemabadCacpacitorPluginWeb: TaleemabadCacpacitorPluginWeb
 });
 
-exports.TaleemabadPlugin = TaleemabadPlugin;
+exports.plugin = plugin;
 //# sourceMappingURL=plugin.cjs.js.map
