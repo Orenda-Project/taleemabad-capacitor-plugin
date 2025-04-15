@@ -1,7 +1,17 @@
 import { registerPlugin } from '@capacitor/core';
-const plugin = registerPlugin('TaleemabadCacpacitorPlugin', {
-    web: () => import('./web').then(m => new m.TaleemabadCacpacitorPluginWeb()),
+/**
+ * Register the TaleemabadPlugin with Capacitor
+ * Provides document scanning and file download functionality
+ */
+const TaleemabadCapacitorPlugin = registerPlugin('TaleemabadPlugin', {
+    /**
+     * Web implementation loader
+     * Dynamically imports and instantiates the web implementation
+     */
+    web: () => import('./web').then(m => new m.TaleemabadWebPlugin()),
 });
-export * from './definitions';
-export { plugin };
+// Export plugin interfaces and types
+export * from './types';
+// Export the plugin instance
+export { TaleemabadCapacitorPlugin };
 //# sourceMappingURL=index.js.map

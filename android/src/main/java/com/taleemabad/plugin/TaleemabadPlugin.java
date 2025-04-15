@@ -29,8 +29,8 @@ import com.tonyodev.fetch2core.DownloadBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-@CapacitorPlugin(name = "TaleemabadCapacitorPlugin")
-public class TaleemabadCapacitorPlugin extends Plugin implements FetchListener {
+@CapacitorPlugin(name = "TaleemabadPlugin")
+public class TaleemabadPlugin extends Plugin implements FetchListener {
 
     private DownloadManager downloadManager = null;
     private static final String TAG = "DownloadManager";

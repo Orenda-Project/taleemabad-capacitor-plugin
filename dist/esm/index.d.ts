@@ -1,4 +1,8 @@
-import type { TaleemabadCacpacitorPlugin } from './definitions';
-declare const plugin: TaleemabadCacpacitorPlugin;
-export * from './definitions';
-export { plugin };
+import { TaleemabadPlugin } from './definitions';
+/**
+ * Register the TaleemabadPlugin with Capacitor
+ * Provides document scanning and file download functionality
+ */
+declare const TaleemabadCapacitorPlugin: TaleemabadPlugin;
+export * from './types';
+export { TaleemabadCapacitorPlugin };

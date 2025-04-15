@@ -13,24 +13,27 @@ npx cap sync
 
 <docgen-index>
 
-* [`startScan(...)`](#startscan)
-* [`startDownload(...)`](#startdownload)
-* [`startDownloadWithTag(...)`](#startdownloadwithtag)
-* [`removeDownloads(...)`](#removedownloads)
-* [`pauseDownloads(...)`](#pausedownloads)
-* [`cancelDownloads(...)`](#canceldownloads)
-* [`resumeDownloads()`](#resumedownloads)
-* [`getDownloadList()`](#getdownloadlist)
-* [`getDownloadListById()`](#getdownloadlistbyid)
 * [`addListener(string, ...)`](#addlistenerstring)
 * [Interfaces](#interfaces)
-* [Type Aliases](#type-aliases)
-* [Enums](#enums)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### startScan(...)
+
+```typescript
+startScan(options?: { pageLimit?: number; mode?: string; enableGalleryImport?: boolean; outputFormats?: OutputFormats; } | undefined) => Promise<ScanResult>
+```
+
+| Param         | Type                                                                                                                                           |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`options`** | <code>{ pageLimit?: number; mode?: string; enableGalleryImport?: boolean; outputFormats?: <a href="#outputformats">OutputFormats</a>; }</code> |
+
+**Returns:** <code>Promise&lt;<a href="#scanresult">ScanResult</a>&gt;</code>
+
+---
 
 ### startDownload(...)
 
@@ -95,8 +98,6 @@ addListener(eventName: String, listenerFunc: (download: { result: string; }) => 
 
 ---
 
-### Interfaces
-
 #### PluginListenerHandle
 
 This interface represents the different types of download events.
@@ -116,3 +117,12 @@ This interface represents the different types of download events.
 | **`onResumed`**              | <code>String</code> | Event when a download is resumed             | YES     | NO  |
 | **`onStarted`**              | <code>String</code> | Event when a download is started             | YES     | NO  |
 | **`onWaitingNetwork`**       | <code>String</code> | Event when a download is waiting for network | YES     | NO  |
+
+### Type Aliases
+
+| **`ScanResult`** |
+| **`URLRequest`** |
+
+### Enums
+
+| **`OutputFormats`** |

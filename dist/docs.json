@@ -1,160 +1,37 @@
 {
   "api": {
-    "name": "TaleemabadCacpacitorPlugin",
-    "slug": "taleemabadcacpacitorplugin",
-    "docs": "",
+    "name": "TaleemabadPlugin",
+    "slug": "taleemabadplugin",
+    "docs": "Main plugin interface that combines scanner and download functionality",
     "tags": [],
     "methods": [
-      {
-        "name": "startScan",
-        "signature": "(options?: Partial<{ pageLimit: number; mode: string; enableGalleryImport: boolean; outputFormats: OutputFormats; }> | undefined) => Promise<ScanResult>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "Partial<{ pageLimit: number; mode: string; enableGalleryImport: boolean; outputFormats: OutputFormats; }> | undefined"
-          }
-        ],
-        "returns": "Promise<ScanResult>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [
-          "ScanResult",
-          "Partial",
-          "OutputFormats"
-        ],
-        "slug": "startscan"
-      },
-      {
-        "name": "startDownload",
-        "signature": "(options: { url: string[]; }) => Promise<{ value: string[]; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ url: string[]; }"
-          }
-        ],
-        "returns": "Promise<{ value: string[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "startdownload"
-      },
-      {
-        "name": "startDownloadWithTag",
-        "signature": "(options: { url: URLRequest[]; }) => Promise<{ value: URLRequest[]; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ url: URLRequest[]; }"
-          }
-        ],
-        "returns": "Promise<{ value: URLRequest[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [
-          "URLRequest"
-        ],
-        "slug": "startdownloadwithtag"
-      },
-      {
-        "name": "removeDownloads",
-        "signature": "(options: { value: string[]; }) => Promise<{ value: string[]; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ value: string[]; }"
-          }
-        ],
-        "returns": "Promise<{ value: string[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "removedownloads"
-      },
-      {
-        "name": "pauseDownloads",
-        "signature": "(options: { value: string[]; }) => Promise<{ value: string[]; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ value: string[]; }"
-          }
-        ],
-        "returns": "Promise<{ value: string[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "pausedownloads"
-      },
-      {
-        "name": "cancelDownloads",
-        "signature": "(options: { value: string[]; }) => Promise<{ value: string[]; }>",
-        "parameters": [
-          {
-            "name": "options",
-            "docs": "",
-            "type": "{ value: string[]; }"
-          }
-        ],
-        "returns": "Promise<{ value: string[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "canceldownloads"
-      },
-      {
-        "name": "resumeDownloads",
-        "signature": "() => Promise<{ value: string; }>",
-        "parameters": [],
-        "returns": "Promise<{ value: string; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "resumedownloads"
-      },
-      {
-        "name": "getDownloadList",
-        "signature": "() => Promise<{ value: string; }>",
-        "parameters": [],
-        "returns": "Promise<{ value: string; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "getdownloadlist"
-      },
-      {
-        "name": "getDownloadListById",
-        "signature": "() => Promise<{ value: string; }>",
-        "parameters": [],
-        "returns": "Promise<{ value: string; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "getdownloadlistbyid"
-      },
       {
         "name": "addListener",
         "signature": "(eventName: string, listenerFunc: (download: { result: string; }) => void) => PluginListenerHandle",
         "parameters": [
           {
             "name": "eventName",
-            "docs": "",
+            "docs": "Name of the event to listen for",
             "type": "string"
           },
           {
             "name": "listenerFunc",
-            "docs": "",
+            "docs": "Callback function that handles the event",
             "type": "(download: { result: string; }) => void"
           }
         ],
         "returns": "PluginListenerHandle",
-        "tags": [],
-        "docs": "",
+        "tags": [
+          {
+            "name": "param",
+            "text": "eventName Name of the event to listen for"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc Callback function that handles the event"
+          }
+        ],
+        "docs": "Add a listener for download events",
         "complexTypes": [
           "PluginListenerHandle"
         ],
@@ -181,69 +58,7 @@
       ]
     }
   ],
-  "enums": [
-    {
-      "name": "OutputFormats",
-      "slug": "outputformats",
-      "members": [
-        {
-          "name": "JPEG",
-          "value": "'JPEG'",
-          "tags": [],
-          "docs": ""
-        },
-        {
-          "name": "PDF",
-          "value": "'PDF'",
-          "tags": [],
-          "docs": ""
-        },
-        {
-          "name": "BOTH",
-          "value": "'BOTH'",
-          "tags": [],
-          "docs": ""
-        }
-      ]
-    }
-  ],
-  "typeAliases": [
-    {
-      "name": "ScanResult",
-      "slug": "scanresult",
-      "docs": "",
-      "types": [
-        {
-          "text": "{\n  images?: string[];\n  pdf?: string | null;\n}",
-          "complexTypes": []
-        }
-      ]
-    },
-    {
-      "name": "Partial",
-      "slug": "partial",
-      "docs": "Make all properties in T optional",
-      "types": [
-        {
-          "text": "{\r\n    [P in keyof T]?: T[P];\r\n}",
-          "complexTypes": [
-            "T",
-            "P"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "URLRequest",
-      "slug": "urlrequest",
-      "docs": "",
-      "types": [
-        {
-          "text": "{\n  tag: string;\n  url: string;\n}",
-          "complexTypes": []
-        }
-      ]
-    }
-  ],
+  "enums": [],
+  "typeAliases": [],
   "pluginConfigs": []
 }
