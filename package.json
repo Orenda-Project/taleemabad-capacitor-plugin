@@ -1,6 +1,6 @@
 {
   "name": "taleemabad-capacitor-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Capacitor plugin for downloading files to native device and document scanning",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
